@@ -34,9 +34,9 @@ class Btn():
 
     def computer(self, none):
         button_numb = Game.computer_step(0)
-        if type(button_numb) != 'NoneType':
-            button_list[button_numb].Button1.config(text = 'O', fg = 'red', font = ('Comic Sans MS', 24, 'bold'))
-            button_list[button_numb].Button1.unbind('<Button-1>')
+        print(type(button_numb))
+        button_list[button_numb].Button1.config(text = 'O', fg = 'red', font = ('Comic Sans MS', 24, 'bold'))
+        button_list[button_numb].Button1.unbind('<Button-1>')
 
     def player_click(self, none):
         Field.board[self.id] = Field.X
